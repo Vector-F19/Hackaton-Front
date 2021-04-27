@@ -1,288 +1,480 @@
 <html>
-  <head>
- <style>
- @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
-.fa-2x {
-font-size: 2em;
-}
-.fa {
-position: relative;
-display: table-cell;
-width: 60px;
-height: 36px;
-text-align: center;
-vertical-align: middle;
-font-size:20px;
-}
+<head>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
-.main-menu:hover,nav.main-menu.expanded {
-width:250px;
-overflow:visible;
-}
+        @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
-.main-menu {
-background:#3f2856;
-border-right:1px solid #3f2856;
-position:absolute;
-top:0;
-bottom:0;
-height:100%;
-left:0;
-width:60px;
-overflow:hidden;
--webkit-transition:width .05s linear;
-transition:width .05s linear;
--webkit-transform:translateZ(0) scale(1,1);
-z-index:1000;
-}
+        .fa-2x {
+            font-size: 2em;
+        }
 
-.main-menu>ul {
-margin:7px 0;
-}
+        .fa {
+            position: relative;
+            display: table-cell;
+            width: 60px;
+            height: 36px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 20px;
+        }
 
-.main-menu li {
-position:relative;
-display:block;
-width:250px;
-}
+        .main-menu:hover,
+        nav.main-menu.expanded {
+            width: 250px;
+            overflow: visible;
+        }
 
-.main-menu li>a {
-position:relative;
-display:table;
-border-collapse:collapse;
-border-spacing:0;
-color:rgb(255, 255, 255);
- font-family: arial;
-font-size: 14px;
-text-decoration:none;
--webkit-transform:translateZ(0) scale(1,1);
--webkit-transition:all .1s linear;
-transition:all .1s linear;
-  
-}
+        .main-menu {
+            background: #3f2856;
+            border-right: 1px solid #3f2856;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            width: 60px;
+            overflow: hidden;
+            -webkit-transition: width .05s linear;
+            transition: width .05s linear;
+            -webkit-transform: translateZ(0) scale(1, 1);
+            z-index: 1000;
+        }
 
-.main-menu .nav-icon {
-position:relative;
-display:table-cell;
-width:60px;
-height:36px;
-text-align:center;
-vertical-align:middle;
-font-size:18px;
-}
+        .main-menu>ul {
+            margin: 7px 0;
+        }
 
-.main-menu .nav-text {
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:190px;
-  font-family: 'Titillium Web', sans-serif;
-}
+        .main-menu li {
+            position: relative;
+            display: block;
+            width: 250px;
+        }
 
-.main-menu>ul.logout {
-position:absolute;
-left:0;
-bottom: 0px;
-}
+        .main-menu li>a {
+            position: relative;
+            display: table;
+            border-collapse: collapse;
+            border-spacing: 0;
+            color: rgb(255, 255, 255);
+            font-family: arial;
+            font-size: 14px;
+            text-decoration: none;
+            -webkit-transform: translateZ(0) scale(1, 1);
+            -webkit-transition: all .1s linear;
+            transition: all .1s linear;
 
-.no-touch .scrollable.hover {
-overflow-y:hidden;
-}
+        }
 
-.no-touch .scrollable.hover:hover {
-overflow-y:auto;
-overflow:visible;
-}
+        .main-menu .nav-icon {
+            position: relative;
+            display: table-cell;
+            width: 60px;
+            height: 36px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+        }
 
-a:hover,a:focus {
-text-decoration:none;
-}
+        .main-menu .nav-text {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            width: 190px;
+            font-family: 'Titillium Web', sans-serif;
+        }
 
-nav {
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
--o-user-select:none;
-user-select:none;
-}
+        .main-menu>ul.logout {
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+        }
 
-nav ul,nav li {
-outline:0;
-margin:0;
-padding:0;
-}
-.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color:#fff;
-background-color:#984b9b;
-}
-.area {
-float: left;
-background: #e2e2e2;
-width: 100%;
-height: 100%;
-}
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
-/*body {
-  background:linear-gradient(to left, #dd186a, #3f2856);    
-}*/
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 93%;
-  position: absolute; 
-  top: 78px;
-  margin-left: 10px;
-  margin-right: 20px;
-  left: 60px;
-}
+        .no-touch .scrollable.hover {
+            overflow-y: hidden;
+        }
 
-#customers td, #customers th {
-  border: 1px solid rgb(0, 0, 0);
-  padding: 2px;
-}
+        .no-touch .scrollable.hover:hover {
+            overflow-y: auto;
+            overflow: visible;
+        }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
 
-#customers tr:hover {background-color: rgb(155, 155, 155);}
+        nav {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
 
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #3f2856;
-  color: white;
-}
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 227px;
-    height: 44px;
-}       
-</style>
-  </head>
-  <body>
-      
-    <img src="logo.png" id="logo" >
-    
-      <div class="area"></div><nav class="main-menu">
-            <ul>
-                <li>
-                    <a href="#teste">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                            Home
-                        </span>
-                    </a>
-                  
-                </li>
-                <li class="has-subnav">
-                    <a href="#">
-                        <i class="fa fa-list fa-2x"></i>
-                        <span class="nav-text">
-                            Dashboard
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="#">
-                       <i class="fa fa-folder-open fa-2x"></i>
-                        <span class="nav-text">
-                            Tráfego de Arquivos
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="#">
-                       <i class="fa fa-bar-chart-o fa-2x"></i>
-                        <span class="nav-text">
-                            Accesstage
-                        </span>
-                    </a>
-                   
-                </li>
-                
-                <li>
-                    <a href="#">
-                       <i class="fa fa-info fa-2x"></i>
-                        <span class="nav-text">
-                            FAQ
-                        </span>
-                    </a>
-                </li>
-            </ul>
+        nav ul,
+        nav li {
+            outline: 0;
+            margin: 0;
+            padding: 0;
+        }
 
-            <ul class="logout">
-                <li>
-                   <a href="#">
-                         <i class="fa fa-power-off fa-2x"></i>
-                        <span class="nav-text">
-                            Logout
-                        </span>
-                    </a>
-                </li>  
-            </ul>
-        </nav>
-        <table id="customers">
-            <tr>
-                <th>Sender</th>
-                <th>Receiver</th>
-                <th>Doctype</th>
-                <th>Fim Processamento</th>
-                <th>Tracking id</th>
-                <th>Tamanho</th>
-              
-            </tr>
-            <tr>
-                <td>BANCO SANTANDER BRASIL S/A</td>
-                <td>INST ORT FISIOTERAP SP LT</td>
-                <td>SANTEXTRATO31</td>
-                <td>2021-04-26 13:49:39</td>
-                <td>202104267523903</td>
-                <td>1.65 KB</td>
-            </tr>
-            <tr>
-                <td>CONSTRUTORA TENDA S/A</td>
-                <td>CAIXA ECONOMICA FEDERAL</td>
-                <td>CEFBOWREM</td>
-                <td>2021-04-26 13:49:39</td>
-                <td>202104267523756</td>
-                <td>1.65 KB</td>
-            </tr>
-            <tr>
-                <td>BANCO SANTANDER BRASIL S/A</td>
-                <td>INST ORT FISIOTERAP SP LT</td>
-                <td>SANTEXTRATO31</td>
-                <td>2021-04-26 13:49:39</td>
-                <td>202104267523903</td>
-                <td>1.65 KB</td>
-            </tr>
-            <tr>
-                <td>BANCO SANTANDER BRASIL S/A</td>
-                <td>INST ORT FISIOTERAP SP LT</td>
-                <td>SANTEXTRATO31</td>
-                <td>2021-04-26 13:49:39</td>
-                <td>202104267523903</td>
-                <td>1.65 KB</td>
-            </tr>
-            <tr>
-                <td>BANCO SANTANDER BRASIL S/A</td>
-                <td>INST ORT FISIOTERAP SP LT</td>
-                <td>SANTEXTRATO31</td>
-                <td>2021-04-26 13:49:39</td>
-                <td>202104267523903</td>
-                <td>1.65 KB</td>
-            </tr>
+        .main-menu li:hover>a,
+        nav.main-menu li.active>a,
+        .dropdown-menu>li>a:hover,
+        .dropdown-menu>li>a:focus,
+        .dropdown-menu>.active>a,
+        .dropdown-menu>.active>a:hover,
+        .dropdown-menu>.active>a:focus,
+        .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+        .dashboard-page nav.dashboard-menu ul li.active a {
+            color: #fff;
+            background-color: #984b9b;
+        }
 
-          </table>
-  </body>
-    </html>
+        .area {
+            float: left;
+            background: #e2e2e2;
+            width: 100%;
+            height: 100%;
+        }
+
+        @font-face {
+            font-family: 'Titillium Web';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+        }
+
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 93%;
+            position: absolute;
+            top: 250px;
+            margin-left: 10px;
+            margin-right: 0px;
+            left: 60px;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 2px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: rgb(155, 155, 155);
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #3f2856;
+            color: white;
+        }
+
+        #logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 227px;
+            height: 44px;
+        }
+
+        #searchbox {
+            background: #d8d8d8;
+            border: 4px solid #e8e8e8;
+            padding: 20px 10px;
+            width: 250px;
+            margin-left: 70px;
+            display: inline-block;
+        }
+
+        #searchbox2 {
+            background: #d8d8d8;
+            border: 4px solid #e8e8e8;
+            padding: 20px 10px;
+            width: 250px;
+            margin-left: 70px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+
+
+
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+
+
+        input:focus:-moz-placeholder {
+            color: transparent;
+        }
+
+
+
+        input:focus::-moz-placeholder {
+            color: transparent;
+        }
+
+
+
+        #searchbox input {
+            outline: none;
+        }
+
+
+
+        #searchbox input[type="text"] {
+            background: url(https://lh6.googleusercontent.com/-JreMcg-z7Tk/VEWVDNsAxiI/AAAAAAAAHd8/TzM6LSStahI/s15-no/search-dark.png) no-repeat 10px 6px #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #fff;
+            font: bold 12px Arial, Helvetica, Sans-serif;
+            color: #bebebe;
+            width: 79%;
+            padding: 8px 15px 8px 30px;
+        }
+
+
+
+        #searchbox2 input {
+            outline: none;
+        }
+
+
+
+        #searchbox2 input[type="text"] {
+            background: url(https://lh6.googleusercontent.com/-JreMcg-z7Tk/VEWVDNsAxiI/AAAAAAAAHd8/TzM6LSStahI/s15-no/search-dark.png) no-repeat 10px 6px #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #fff;
+            font: bold 12px Arial, Helvetica, Sans-serif;
+            color: #bebebe;
+            width: 79%;
+            padding: 8px 15px 8px 30px;
+        }
+
+
+
+        #button-submit {
+            background: #6A6F75;
+            border-width: 0px;
+            padding: 9px 0px;
+            width: 32.3%;
+            cursor: pointer;
+            font: bold 12px Arial, Helvetica;
+            color: #fff;
+            text-shadow: 0 1px 0 #555;
+            margin-left: 800px;
+
+        }
+
+
+
+        #button-submit:hover {
+            background: #4f5356;
+        }
+
+
+
+        #button-submit:active {
+            background: #5b5d60;
+            outline: none;
+        }
+
+
+
+        .buttom::-moz-focus-inner {
+            border: 0;
+        }
+
+
+
+        .buttom {
+            position: absolute;
+            top: 32%;
+            right: 54.5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="logo.png" id="logo">
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="#home">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#dash">
+                    <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        Dashboard
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#trafego">
+                    <i class="fa fa-folder-open fa-2x"></i>
+                    <span class="nav-text">
+                        Envio de Arquivos
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="nav-text">
+                        Accesstage
+                    </span>
+                </a>
+
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text">
+                        FAQ
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="logout">
+            <li>
+                <a href="#">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <form id="searchbox" method="get" action="/search">
+        <input name="q" type="text" size="15" placeholder="Sender" />
+        </form>
+        
+         
+        
+        <form id="searchbox" method="get" action="/search">
+        <input name="q" type="text" size="15" placeholder="Receiver" />
+        </form>
+        
+         
+        
+        <form id="searchbox" method="get" action="/search">
+        <input name="q" type="text" size="15" placeholder="Doctype" />
+        </form>
+        
+         
+        
+        <form id="searchbox" method="get" action="/search">
+        <input name="q" type="text" size="15" placeholder="Tipo arquivo" />
+        </form>
+        
+         
+        
+        <form id="searchbox" method="get" action="/search">
+        <input name="q" type="text" size="15" placeholder="Data de envio         ___/___/___" />
+        </form>
+        
+         
+        
+        <form id="searchbox2" method="get" action="/search">
+        <input name="q" type="text" size="15" placeholder="Data de retirada          ___/___/___" />
+        </form>
+        
+         
+        
+        <form id="searchbox2" method="get" action="/search">
+        <input name="q" type="text" size="15" placeholder="Traking Id" />
+        </form>
+        
+         
+        
+        <div class="buttom">
+        <input id="button-submit" type="submit" value="Pesquisar" />
+        <div>
+    <table id="customers">
+        <tr>
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Doctype</th>
+            <th>Tipo de Arquivo</th>
+            <th>Tracking ID</th>
+            <th>Tamanho(KB)</th>
+            <th>Data de Envio</th>
+            <th>Data de Retirada</th>
+            <th>Qtd. de Documentos</th>
+            <th>Nomenclatura do arquivo (entrada/saída)</th>
+            <th>Número de processo</th>
+            <th>Logs</th>
+            <th>Tempo de processamento</th>
+        </tr>
+        <tr>
+            <td>BANCO SANTANDER BRASIL S/A</td>
+            <td>INST ORT FISIOTERAP SP LT</td>
+            <td>SANTEXTRATO31</td>
+            <td>2021-04-26 13:49:39</td>
+            <td>202104267523903</td>
+            <td>1.65 KB</td>
+        </tr>
+        <tr>
+            <td>CONSTRUTORA TENDA S/A</td>
+            <td>CAIXA ECONOMICA FEDERAL</td>
+            <td>CEFBOWREM</td>
+            <td>2021-04-26 13:49:39</td>
+            <td>202104267523756</td>
+            <td>1.65 KB</td>
+        </tr>
+        <tr>
+            <td>BANCO SANTANDER BRASIL S/A</td>
+            <td>INST ORT FISIOTERAP SP LT</td>
+            <td>SANTEXTRATO31</td>
+            <td>2021-04-26 13:49:39</td>
+            <td>202104267523903</td>
+            <td>1.65 KB</td>
+        </tr>
+        <tr>
+            <td>BANCO SANTANDER BRASIL S/A</td>
+            <td>INST ORT FISIOTERAP SP LT</td>
+            <td>SANTEXTRATO31</td>
+            <td>2021-04-26 13:49:39</td>
+            <td>202104267523903</td>
+            <td>1.65 KB</td>
+        </tr>
+        <tr>
+            <td>BANCO SANTANDER BRASIL S/A</td>
+            <td>INST ORT FISIOTERAP SP LT</td>
+            <td>SANTEXTRATO31</td>
+            <td>2021-04-26 13:49:39</td>
+            <td>202104267523903</td>
+            <td>1.65 KB</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
