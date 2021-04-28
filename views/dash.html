@@ -147,6 +147,32 @@
             src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
         }
 
+
+        #logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 227px;
+            height: 44px;
+        }
+/*FUNDO*/
+        body {
+            background-color: #C4C4C4;
+        }
+
+        .caixa {
+            position: absolute;
+            left: 40px;
+            width: 1750px;
+            height: 500px;
+
+            background: #FFFFFF;
+
+        }
+
+/*FIM-FUNDO*/
+
+ /*TABELA*/
         #customers {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
@@ -156,8 +182,10 @@
             margin-left: 10px;
             margin-right: 0px;
             left: 60px;
+            box-shadow: 30px 30px 30px 30px #888888;
         }
 
+       
         #customers td,
         #customers th {
             border: 1px solid rgb(0, 0, 0);
@@ -180,58 +208,37 @@
             color: white;
         }
 
-        #logo {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 227px;
-            height: 44px;
-        }
+        /*FIM-tabela*/
+
+        /*pesquisa*/
+        .status {}
 
         #searchbox {
             background: #d8d8d8;
             border: 4px solid #e8e8e8;
+            margin-top: 10px;
             padding: 20px 10px;
             width: 250px;
             margin-left: 70px;
             display: inline-block;
+            box-shadow: 10px 10px 10px 10px #888888;
         }
-
-        #searchbox2 {
-            background: #d8d8d8;
-            border: 4px solid #e8e8e8;
-            padding: 20px 10px;
-            width: 250px;
-            margin-left: 70px;
-            margin-top: 30px;
-            display: inline-block;
-        }
-
-
-
 
         input:focus::-webkit-input-placeholder {
             color: transparent;
         }
 
-
-
         input:focus:-moz-placeholder {
             color: transparent;
         }
-
-
 
         input:focus::-moz-placeholder {
             color: transparent;
         }
 
-
-
         #searchbox input {
             outline: none;
         }
-
 
 
         #searchbox input[type="text"] {
@@ -245,16 +252,13 @@
             padding: 8px 15px 8px 30px;
         }
 
-
-
         #searchbox2 input {
             outline: none;
         }
 
 
-
         #searchbox2 input[type="text"] {
-            background: url(https://lh6.googleusercontent.com/-JreMcg-z7Tk/VEWVDNsAxiI/AAAAAAAAHd8/TzM6LSStahI/s15-no/search-dark.png) no-repeat 10px 6px #fff;
+
             border-width: 1px;
             border-style: solid;
             border-color: #fff;
@@ -264,47 +268,25 @@
             padding: 8px 15px 8px 30px;
         }
 
-
-
-        #button-submit {
-            background: #6A6F75;
-            border-width: 0px;
-            padding: 9px 0px;
-            width: 32.3%;
+        .button2 {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
             cursor: pointer;
-            font: bold 12px Arial, Helvetica;
-            color: #fff;
-            text-shadow: 0 1px 0 #555;
-            margin-left: 800px;
-
+            margin-top: 70px;
+            margin-left: 65px;
+            box-shadow: 5px 5px 5px 5px #888888
         }
 
-
-
-        #button-submit:hover {
-            background: #4f5356;
-        }
-
-
-
-        #button-submit:active {
-            background: #5b5d60;
-            outline: none;
-        }
-
-
-
-        .buttom::-moz-focus-inner {
-            border: 0;
-        }
-
-
-
-        .buttom {
-            position: absolute;
-            top: 32%;
-            right: 54.5%;
-        }
+        /*FIM-pesquisa*/
     </style>
 </head>
 
@@ -372,106 +354,103 @@
             </li>
         </ul>
     </nav>
-    <form id="searchbox" method="get" action="/search">
-        <input name="q" type="text" size="15" placeholder="Sender" />
-        </form>
-        
-         
-        
-        <form id="searchbox" method="get" action="/search">
-        <input name="q" type="text" size="15" placeholder="Receiver" />
-        </form>
-        
-         
-        
-        <form id="searchbox" method="get" action="/search">
-        <input name="q" type="text" size="15" placeholder="Doctype" />
-        </form>
-        
-         
-        
-        <form id="searchbox" method="get" action="/search">
-        <input name="q" type="text" size="15" placeholder="Tipo arquivo" />
-        </form>
-        
-         
-        
-        <form id="searchbox" method="get" action="/search">
-        <input name="q" type="text" size="15" placeholder="Data de envio         ___/___/___" />
-        </form>
-        
-         
-        
-        <form id="searchbox2" method="get" action="/search">
-        <input name="q" type="text" size="15" placeholder="Data de retirada          ___/___/___" />
-        </form>
-        
-         
-        
-        <form id="searchbox2" method="get" action="/search">
-        <input name="q" type="text" size="15" placeholder="Traking Id" />
-        </form>
-        
-         
-        
-        <div class="buttom">
-        <input id="button-submit" type="submit" value="Pesquisar" />
-        <div>
-    <table id="customers">
-        <tr>
-            <th>Sender</th>
-            <th>Receiver</th>
-            <th>Doctype</th>
-            <th>Tipo de Arquivo</th>
-            <th>Data de Envio</th>
-            <th>Data de Retirada</th>
-            <th>Nomenclatura do arquivo (entrada/saída)</th>
-            <th>Número de processo</th>
-            <th>Logs</th>
-            <th>Tempo de processamento</th>
-        </tr>
-        <tr>
-            <td>BANCO SANTANDER BRASIL S/A</td>
-            <td>INST ORT FISIOTERAP SP LT</td>
-            <td>SANTEXTRATO31</td>
-            <td>2021-04-26 13:49:39</td>
-            <td>202104267523903</td>
-            <td>1.65 KB</td>
-        </tr>
-        <tr>
-            <td>CONSTRUTORA TENDA S/A</td>
-            <td>CAIXA ECONOMICA FEDERAL</td>
-            <td>CEFBOWREM</td>
-            <td>2021-04-26 13:49:39</td>
-            <td>202104267523756</td>
-            <td>1.65 KB</td>
-        </tr>
-        <tr>
-            <td>BANCO SANTANDER BRASIL S/A</td>
-            <td>INST ORT FISIOTERAP SP LT</td>
-            <td>SANTEXTRATO31</td>
-            <td>2021-04-26 13:49:39</td>
-            <td>202104267523903</td>
-            <td>1.65 KB</td>
-        </tr>
-        <tr>
-            <td>BANCO SANTANDER BRASIL S/A</td>
-            <td>INST ORT FISIOTERAP SP LT</td>
-            <td>SANTEXTRATO31</td>
-            <td>2021-04-26 13:49:39</td>
-            <td>202104267523903</td>
-            <td>1.65 KB</td>
-        </tr>
-        <tr>
-            <td>BANCO SANTANDER BRASIL S/A</td>
-            <td>INST ORT FISIOTERAP SP LT</td>
-            <td>SANTEXTRATO31</td>
-            <td>2021-04-26 13:49:39</td>
-            <td>202104267523903</td>
-            <td>1.65 KB</td>
-        </tr>
+</body>
 
-    </table>
+<body>
+
+    <body>
+        <div class="caixa">
+            <form id="searchbox" method="get" action="/search">
+                <input name="q" type="text" size="15" placeholder="Remetente" />
+            </form>
+
+            <form id="searchbox" method="get" action="/search">
+                <input name="q" type="text" size="15" placeholder="Destinatario" />
+            </form>
+
+            <form id="searchbox" method="get" action="/search">
+                <input name="q" type="text" size="15" placeholder="Tipo arquivo" />
+            </form>
+
+            <form id="searchbox" method="get" action="/search">
+                <input name="q" type="text" size="15" placeholder="Data de envio         ___/___/___" />
+            </form>
+
+            <form id="searchbox" method="get" action="/search">
+                <input name="q" type="text" size="15" placeholder="Data de retirada          ___/___/___" />
+            </form>
+            <button class="button2">Pesquisar</button>
+            <button class="button2">limpar</button>
+
+            <table id="customers">
+
+                <tr>
+                    <th>Status</th>
+                    <th>Remetente</th>
+                    <th>Destinatario</th>
+                    <th>Tipo de Arquivo</th>
+                    <th>Data de Envio</th>
+                    <th>Data de Retirada</th>
+                    <th>Nomenclatura do arquivo (entrada/saída)</th>
+
+                    <th></th>
+                </tr>
+                <tr>
+                    <td class="status"></td>
+                    <td>INST ORT FISIOTERAP SP LT</td>
+                    <td>SANTEXTRATO31</td>
+                    <td>2021-04-26 13:49:39</td>
+                    <td>202104267523903</td>
+                    <td>1.65 KB</td>
+                    <td>1.65 KB</td>
+                    <td><button>Log</button>⠀<button>Download</button></td>
+
+                </tr>
+                <tr>
+                    <td class="status"></td>
+                    <td>CAIXA ECONOMICA FEDERAL</td>
+                    <td>CEFBOWREM</td>
+                    <td>2021-04-26 13:49:39</td>
+                    <td>202104267523756</td>
+                    <td>1.65 KB</td>
+                    <td>1.65 KB</td>
+                    <td><button>Log</button>⠀<button>Download</button></td>
+                </tr>
+                <tr>
+                    <td class="status"></td>
+                    <td>INST ORT FISIOTERAP SP LT</td>
+                    <td>SANTEXTRATO31</td>
+                    <td>2021-04-26 13:49:39</td>
+                    <td>202104267523903</td>
+                    <td>1.65 KB</td>
+                    <td>1.65 KB</td>
+                    <td><button>Log</button>⠀<button>Download</button></td>
+                </tr>
+                <tr>
+                    <td class="status"></td>
+                    <td>INST ORT FISIOTERAP SP LT</td>
+                    <td>SANTEXTRATO31</td>
+                    <td>2021-04-26 13:49:39</td>
+                    <td>202104267523903</td>
+                    <td>1.65 KB</td>
+                    <td>1.65 KB</td>
+                    <td><button>Log</button>⠀<button>Download</button></td>
+                </tr>
+                <tr>
+                    <td class="status"></td>
+                    <td>INST ORT FISIOTERAP SP LT</td>
+                    <td>SANTEXTRATO31</td>
+                    <td>2021-04-26 13:49:39</td>
+                    <td>202104267523903</td>
+                    <td>1.65 KB</td>
+                    <td>1.65 KB</td>
+                    <td><button>Log</button>⠀<button>Download</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </body>
+
 </body>
 
 </html>
