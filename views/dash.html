@@ -2,154 +2,155 @@
 
 <head>
     <style>
-     /*Inicio menu*/  
-     @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+        /*Inicio menu*/
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+        @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
-.fa-2x {
-    font-size: 2em;
-}
+        .fa-2x {
+            font-size: 2em;
+        }
 
-.fa {
-    position: relative;
-    display: table-cell;
-    width: 60px;
-    height: 36px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-}
+        .fa {
+            position: relative;
+            display: table-cell;
+            width: 60px;
+            height: 36px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 20px;
+        }
 
-.main-menu:hover,
-nav.main-menu.expanded {
-    width: 250px;
-    overflow: visible;
-}
+        .main-menu:hover,
+        nav.main-menu.expanded {
+            width: 250px;
+            overflow: visible;
+        }
 
-.main-menu {
-    background: #3f2856;
-    border-right: 1px solid #3f2856;
-    position: absolute;
-    top: 35px;
-    bottom: 0;
-    height: 94%;
-    left: 0;
-    width: 60px;
-    overflow: hidden;
-    -webkit-transition: width .05s linear;
-    transition: width .05s linear;
-    -webkit-transform: translateZ(0) scale(1, 1);
-    z-index: 1000;
-}
+        .main-menu {
+            background: #3f2856;
+            border-right: 1px solid #3f2856;
+            position: absolute;
+            top: 35px;
+            bottom: 0;
+            height: 94%;
+            left: 0;
+            width: 60px;
+            overflow: hidden;
+            -webkit-transition: width .05s linear;
+            transition: width .05s linear;
+            -webkit-transform: translateZ(0) scale(1, 1);
+            z-index: 1000;
+        }
 
-.main-menu>ul {
-    margin: 7px 0;
-}
+        .main-menu>ul {
+            margin: 7px 0;
+        }
 
-.main-menu li {
-    position: relative;
-    display: block;
-    width: 250px;
-}
+        .main-menu li {
+            position: relative;
+            display: block;
+            width: 250px;
+        }
 
-.main-menu li>a {
-    position: relative;
-    display: table;
-    border-collapse: collapse;
-    border-spacing: 0;
-    color: rgb(255, 255, 255);
-    font-family: arial;
-    font-size: 14px;
-    text-decoration: none;
-    -webkit-transform: translateZ(0) scale(1, 1);
-    -webkit-transition: all .1s linear;
-    transition: all .1s linear;
+        .main-menu li>a {
+            position: relative;
+            display: table;
+            border-collapse: collapse;
+            border-spacing: 0;
+            color: rgb(255, 255, 255);
+            font-family: arial;
+            font-size: 14px;
+            text-decoration: none;
+            -webkit-transform: translateZ(0) scale(1, 1);
+            -webkit-transition: all .1s linear;
+            transition: all .1s linear;
 
-}
+        }
 
-.main-menu .nav-icon {
-    position: relative;
-    display: table-cell;
-    width: 60px;
-    height: 36px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 18px;
-}
+        .main-menu .nav-icon {
+            position: relative;
+            display: table-cell;
+            width: 60px;
+            height: 36px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+        }
 
-.main-menu .nav-text {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    width: 190px;
-    font-family: 'Titillium Web', sans-serif;
-}
+        .main-menu .nav-text {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            width: 190px;
+            font-family: 'Titillium Web', sans-serif;
+        }
 
-.main-menu>ul.logout {
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-}
+        .main-menu>ul.logout {
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+        }
 
-.no-touch .scrollable.hover {
-    overflow-y: hidden;
-}
+        .no-touch .scrollable.hover {
+            overflow-y: hidden;
+        }
 
-.no-touch .scrollable.hover:hover {
-    overflow-y: auto;
-    overflow: visible;
-}
+        .no-touch .scrollable.hover:hover {
+            overflow-y: auto;
+            overflow: visible;
+        }
 
-a:hover,
-a:focus {
-    text-decoration: none;
-}
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
 
-nav {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
+        nav {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
 
-nav ul,
-nav li {
-    outline: 0;
-    margin: 0;
-    padding: 0;
-}
+        nav ul,
+        nav li {
+            outline: 0;
+            margin: 0;
+            padding: 0;
+        }
 
-.main-menu li:hover>a,
-nav.main-menu li.active>a,
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus,
-.dropdown-menu>.active>a,
-.dropdown-menu>.active>a:hover,
-.dropdown-menu>.active>a:focus,
-.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
-.dashboard-page nav.dashboard-menu ul li.active a {
-    color: #fff;
-    background-color: #984b9b;
-}
+        .main-menu li:hover>a,
+        nav.main-menu li.active>a,
+        .dropdown-menu>li>a:hover,
+        .dropdown-menu>li>a:focus,
+        .dropdown-menu>.active>a,
+        .dropdown-menu>.active>a:hover,
+        .dropdown-menu>.active>a:focus,
+        .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+        .dashboard-page nav.dashboard-menu ul li.active a {
+            color: #fff;
+            background-color: #984b9b;
+        }
 
-.area {
-    float: left;
-    background: #e2e2e2;
-    width: 100%;
-    height: 100%;
-}
+        .area {
+            float: left;
+            background: #e2e2e2;
+            width: 100%;
+            height: 100%;
+        }
 
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
-/*Fim Menu*/
+        @font-face {
+            font-family: 'Titillium Web';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+        }
 
- /*TABELA*/
+        /*Fim Menu*/
+
+        /*TABELA*/
         #customers {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
@@ -164,7 +165,7 @@ nav.main-menu li.active>a,
 
         }
 
-       
+
         #customers td,
         #customers th {
             border: 1px solid rgb(0, 0, 0);
@@ -183,7 +184,7 @@ nav.main-menu li.active>a,
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
-            background-color: #db7644  ;
+            background-color: #db7644;
             color: white;
         }
 
@@ -248,7 +249,7 @@ nav.main-menu li.active>a,
         }
 
         .button2 {
-            background-color: #DC1668  ;
+            background-color: #DC1668;
             /* Green */
             border: none;
             border-radius: 5px;
@@ -283,6 +284,7 @@ nav.main-menu li.active>a,
             overflow-y: hidden;
             white-space: nowrap;
         }
+
         .caixaPesquisa {
             position: absolute;
             left: 80px;
@@ -291,40 +293,44 @@ nav.main-menu li.active>a,
             margin-top: 0px;
             background: #ffffff;
             box-shadow: 3px 3px 3px 3px #b3b2b2;
-            }
-            .linha {
+        }
+
+        .linha {
             position: absolute;
             left: 0px;
             right: 0px;
             height: 40px;
             margin-top: -9px;
             background: #3f2856;
-            }
-/*FIM-FUNDO*/
+        }
+
+        /*FIM-FUNDO*/
         #logo {
             position: absolute;
             margin-left: 15px;
             margin-top: 8px
-
         }
+
         #nomeSistema {
             text-align: center;
             margin-top: 10px;
             font-size: 20px;
-            font-family:sans-serif;
+            font-family: sans-serif;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right, #DC1668 0%, #DC1668 50.2%, #F5844C 50.2%, #F5844C 100%);
         }
-        #iconRedes{
+
+        #iconRedes {
             position: absolute;
             margin-left: 1732px;
             margin-top: 4px;
             height: 30px;
             width: 144px;
         }
-        #titulo{
-            text-align:left;
+
+        #titulo {
+            text-align: left;
             margin-left: 100px;
             margin-top: 35px;
             font-size: 20px;
@@ -332,6 +338,70 @@ nav.main-menu li.active>a,
             color: #000000;
 
         }
+
+        /*IMG-STATUS-DASH*/
+
+        .Envio {
+
+            width: 35px;
+            margin-top: 10px;
+        }
+
+        .X {
+
+            width: 35px;
+            margin-top: 10px;
+        }
+
+        .processamento {
+
+            width: 35px;
+            margin-top: 10px;
+        }
+
+        /*FIM IMG-STATUS-DASH*/
+        /*popup*/
+
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /*FIM - popup*/
+
+      
     </style>
 </head>
 
@@ -393,119 +463,124 @@ nav.main-menu li.active>a,
     </nav>
 
 </body>
+
 <body>
     <div class="linha">
         <img src="iconredes.png" id="iconRedes">
         <img src="logo_retina.png" id="logo">
         <h1 id="nomeSistema">F Ê N I X</h1>
         <h2 id="titulo">Dashboard</h2>
-    <body>
-        
-            
-        
-        <div class="caixaPesquisa">
-            <form id="searchbox" method="get" action="/search">
-                <input name="q" type="text" size="15" placeholder="Remetente" />
-            </form>
 
-            <form id="searchbox" method="get" action="/search">
-                <input name="q" type="text" size="15" placeholder="Destinatario" />
-            </form>
+        <body>
 
-            <form id="searchbox" method="get" action="/search">
-                <input name="q" type="text" size="15" placeholder="Tipo arquivo" />
-            </form>
 
-            <form id="searchbox" method="get" action="/search">
-                <input name="q" type="text" size="15" placeholder="Data de envio         ___/___/___" />
-            </form>
 
-            <form id="searchbox" method="get" action="/search">
-                <input name="q" type="text" size="15" placeholder="Data de retirada          ___/___/___" />
-            </form>
-            <button class="button2">Pesquisar</button>
-            <button class="button2">limpar</button>
-        </div>
-        <div class="caixa">
-            <table id="customers">
+            <div class="caixaPesquisa">
+                <form id="searchbox" method="get" action="/search">
+                    <input name="q" type="text" size="15" placeholder="Remetente" />
+                </form>
 
-                <tr>
-                    <th>Status</th>
-                    <th>Download</th>
-                    <th>Ação</th>
-                    <th>Remetente</th>
-                    <th>Destinatario</th>
-                    <th>Tipo de Arquivo</th>
-                    <th>Data de Envio</th>
-                    <th>Data de Retiradas</th>
-                    <th>Motivo do Erro</th>
-                    <th>Resubimit de Arquivo</th>
-                    <th>Nomenclatura de arquivo</th>
-                    <th>Nome de Processo</th>
-                    <th>Logs</th>
-                    <th>Tempo de Processamento</th>
-                    <th>Destino</th>
-                   
-                </tr>
-                <tr>
-                    <td class="status"></td>
-                    <td><button>Download</button></td>
-                    <td>Recebimento</td>
-                    <td>UNIBANK - 6628377</td>
-                    <td>PORTO XPTO - 1712246</td>
-                    <td>Pagamento</td>
-                    <td>28/04/2021  15:02:36</td>
-                    <td>28/04/2021  15:03:29</td>
-                    <td>-</td>
-                    <td><button>Resubmeter</button></td>
-                    <td>/itfs/fin/bancos/pagto/in/4028006940.341</td>
-                    <td>ApusPackedMessageDispatcher</td>
-                    <td><button>Link</button>⠀</td>
-                    <td>0 segundos</td>
-                    <td>/data/files/fileDelivery/6628377@1712246@ITAPAGREM17@202104288257044-202104288257047@202104281502</td>
+                <form id="searchbox" method="get" action="/search">
+                    <input name="q" type="text" size="15" placeholder="Destinatario" />
+                </form>
 
-                </tr>
-                <tr>
-                    <td class="status"></td>
-                    <td><button>Download</button></td>
-                    <td>Envio</td>
-                    <td>PORTO XPTO - 1712246</td>
-                    <td>UNIBANK - 6628377</td>
-                    <td>Pagamento</td>
-                    <td>28/04/2021  07:58:39</td>
-                    <td>-</td>
-                    <td>Erro de NSA (NSA esperado: ....)</td>
-                    <td><button>Resubmeter</button></td>
-                    <td>/data/splitter/splitterPagamento/appdir/outgoing/20210428827710464282_seg.tmp</td>
-                    <td>UnpackedMessageDispatcher</td>
-                    <td><button>Link</button>⠀</td>
-                    <td>5 segundos</td>
-                    <td> /data/apusweb2/mbx/1712246/receive/6628377@1712246@ITAPAGRET17@202104288277221@20210428_17_07_11_190@wliServer1.zip</td>
+                <form id="searchbox" method="get" action="/search">
+                    <input name="q" type="text" size="15" placeholder="Tipo arquivo" />
+                </form>
 
-                </tr>
-                <tr>
-                    <td class="status"></td>
-                    <td><button>Download</button></td>
-                    <td>Em processamento</td>
-                    <td>PORTO XPTO - 1585143</td>
-                    <td>UNIBANK - 6628377</td>
-                    <td>Cobrança</td>
-                    <td>28/04/2021  10:03:43</td>
-                    <td>28/04/2021  10:04:37</td>
-                    <td>-</td>
-                    <td><button>Resubmeter</button></td>
-                    <td>/home/accesstage/financeiro/cobranca/carne/remessa/34106829.001</td>
-                    <td>ApusPackedMessageDispatcher</td>
-                    <td><button>Link</button>⠀</td>
-                    <td>0 segundos</td>
-                    <td>/data/files/fileDelivery/6628377@1585143@ITACOBREM@202104288185836-202104288185848@202104281003</td>
+                <form id="searchbox" method="get" action="/search">
+                    <input name="q" type="text" size="15" placeholder="Data de envio         ___/___/___" />
+                </form>
 
-                </tr>
-                
-            </table>
-        </div>
-    </body>
-</div>
+                <form id="searchbox" method="get" action="/search">
+                    <input name="q" type="text" size="15" placeholder="Data de retirada          ___/___/___" />
+                </form>
+                <button class="button2">Pesquisar</button>
+                <button class="button2">limpar</button>
+            </div>
+            <div class="caixa">
+                <table id="customers">
+
+                    <tr>
+                        <th>Status</th>
+                        <th>Download</th>
+                        <th>Ação</th>
+                        <th>Remetente</th>
+                        <th>Destinatario</th>
+                        <th>Tipo de Arquivo</th>
+                        <th>Data de Envio</th>
+                        <th>Data de Retiradas</th>
+                        <th>Motivo do Erro</th>
+                        <th>Resubimit de Arquivo</th>
+                        <th>Nomenclatura de arquivo</th>
+                        <th>Nome de Processo</th>
+                        <th>Logs</th>
+                        <th>Tempo de Processamento</th>
+                        <th>Destino</th>
+
+                    </tr>
+                    <tr>
+                        <td class="status"><img class="Envio" src="Envio.png"></td>
+                        <td><button>Download</button></td>
+                        <td>Recebimento</td>
+                        <td>UNIBANK - 6628377</td>
+                        <td>PORTO XPTO - 1712246</td>
+                        <td>Pagamento</td>
+                        <td>28/04/2021 15:02:36</td>
+                        <td>28/04/2021 15:03:29</td>
+                        <td>-</td>
+                        <td><button>Resubmeter</button></td>
+                        <td>/itfs/fin/bancos/pagto/in/4028006940.341</td>
+                        <td>ApusPackedMessageDispatcher</td>
+                        <td><button id="myBtn">Abir</button></td>
+                        <td>0 segundos</td>
+                        <td>/data/files/fileDelivery/6628377@1712246@ITAPAGREM17@202104288257044-202104288257047@202104281502
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="status"><img class="X" src="X.png"></td>
+                        <td><button>Download</button></td>
+                        <td>Envio</td>
+                        <td>PORTO XPTO - 1712246</td>
+                        <td>UNIBANK - 6628377</td>
+                        <td>Pagamento</td>
+                        <td>28/04/2021 07:58:39</td>
+                        <td>-</td>
+                        <td>Erro de NSA (NSA esperado: ....)</td>
+                        <td><button>Resubmeter</button></td>
+                        <td>/data/splitter/splitterPagamento/appdir/outgoing/20210428827710464282_seg.tmp</td>
+                        <td>UnpackedMessageDispatcher</td>
+                        <td><button id="myBtn">Abir</button></td>
+                        <td>5 segundos</td>
+                        <td> /data/apusweb2/mbx/1712246/receive/6628377@1712246@ITAPAGRET17@202104288277221@20210428_17_07_11_190@wliServer1.zip
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="status"><img class="processamento" src="Processando.png"></td>
+                        <td><button>Download</button></td>
+                        <td>Em processamento</td>
+                        <td>PORTO XPTO - 1585143</td>
+                        <td>UNIBANK - 6628377</td>
+                        <td>Cobrança</td>
+                        <td>28/04/2021 10:03:43</td>
+                        <td>28/04/2021 10:04:37</td>
+                        <td>-</td>
+                        <td><button>Resubmeter</button></td>
+                        <td>/home/accesstage/financeiro/cobranca/carne/remessa/34106829.001</td>
+                        <td>ApusPackedMessageDispatcher</td>
+                        <td><button id="myBtn">Abir</button></td>
+                        <td>0 segundos</td>
+                        <td>/data/files/fileDelivery/6628377@1585143@ITACOBREM@202104288185836-202104288185848@202104281003
+                        </td>
+
+                    </tr>
+
+                </table>
+            </div>
+        </body>
+    </div>
 
 </body>
 

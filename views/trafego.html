@@ -314,7 +314,7 @@
             text-align: center;
             margin-top: 10px;
             font-size: 20px;
-            font-family:sans-serif;
+            font-family: sans-serif;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right, #DC1668 0%, #DC1668 50.2%, #F5844C 50.2%, #F5844C 100%);
@@ -337,15 +337,37 @@
             color: #000000;
 
         }
-        #publi{
+
+        #publi {
             position: absolute;
-            margin-left: 60px;
-            margin-top: 480px;
+            left: 714px;
+            top: 624px;
             height: 30%;
             width: 30%;
         }
+
+        #barra {
+            position: absolute;
+            left: 29%;
+            top: 20%;
+            max-width: 1000px;
+            max-height: 1000px;
+            width: auto;
+            height: auto;
+        }
+
+        .caixaAtras {
+            position: absolute;
+            left: 76px;
+            right: 10px;
+            height: 871px;
+            margin-top: 89px;
+            background: #FFFFFF;
+            box-shadow: 3px 3px 3px 3px #b3b2b2;
+        }
     </style>
 </head>
+
 <body>
     <div class="area"></div>
     <nav class="main-menu">
@@ -413,7 +435,9 @@
         <h2 id="titulo">K/b Trafegados</h2>
     </div>
     <div>
+        <div class="caixaAtras"></div>
         <img src="publi.gif" id="publi">
+        <img src="Grafico-Barra.png" id="barra">
     </div>
 </body>
 
