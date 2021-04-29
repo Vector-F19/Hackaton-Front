@@ -306,13 +306,14 @@
             margin-top: 8px
 
         }
-        #nomeSistema{
+        #nomeSistema {
             text-align: center;
             margin-top: 10px;
             font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #FFFFFF;
-
+            font-family:sans-serif;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #DC1668 0%, #DC1668 50%, #F5844C 50%, #F5844C 100%);
         }
         #iconRedes{
             position: absolute;
@@ -344,45 +345,39 @@
                         Home
                     </span>
                 </a>
-
             </li>
             <li class="has-subnav">
-                <a href="#trafego">
-                    <i class="fa fa-list fa-2x"></i>
+                <a href="#up">
+                    <i class="fa fa-folder-open fa-2x"></i>
                     <span class="nav-text">
                         Arquivos
                     </span>
                 </a>
-
             </li>
             <li class="has-subnav">
                 <a href="#dash">
-                    <i class="fa fa-folder-open fa-2x"></i>
+                    <i class="fa fa-list fa-2x"></i>
                     <span class="nav-text">
                         Dashboard
                     </span>
                 </a>
-
             </li>
             <li class="has-subnav">
-                <a href="#access">
-                    <i class="fa fa-bar-chart-o fa-2x"></i>
-                    <span class="nav-text">
-                        Accesstage
-                    </span>
-                </a>
-
-            </li>
-
-            <li>
-                <a href="#">
+                <a href="#auditoria">
                     <i class="fa fa-info fa-2x"></i>
                     <span class="nav-text">
-                        FAQ
+                        Auditoria
                     </span>
                 </a>
             </li>
-        </ul>
+            <li class="has-subnav">
+                <a href="#trafego">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="nav-text">
+                        Tráfego de Arquivos
+                    </span>
+                </a>
+            </li>
 
         <ul class="logout">
             <li>
@@ -400,8 +395,8 @@
     <div class="linha">
         <img src="iconredes.png" id="iconRedes">
         <img src="logo_retina.png" id="logo">
-        <h1 id="nomeSistema">APUSTRACK</h1>
-        <h2 id="titulo">Accesstage</h2>
+        <h1 id="nomeSistema">F E N I X</h1>
+        <h2 id="titulo">Auditoria</h2>
 </div>
 
 </body>
