@@ -33,7 +33,7 @@ nav.main-menu.expanded {
     position: absolute;
     top: 35px;
     bottom: 0;
-    height: 80%;
+    height: 94%;
     left: 0;
     width: 60px;
     overflow: hidden;
@@ -152,6 +152,7 @@ nav.main-menu li.active>a,
  /*TABELA*/
         #customers {
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
             border-collapse: collapse;
             width: 93%;
             position: absolute;
@@ -182,7 +183,7 @@ nav.main-menu li.active>a,
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
-            background-color: #3f2856;
+            background-color: #db7644  ;
             color: white;
         }
 
@@ -247,7 +248,7 @@ nav.main-menu li.active>a,
         }
 
         .button2 {
-            background-color: #F5844C ;
+            background-color: #DC1668  ;
             /* Green */
             border: none;
             border-radius: 5px;
@@ -313,7 +314,7 @@ nav.main-menu li.active>a,
             font-family:sans-serif;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(to right, #DC1668 0%, #DC1668 50%, #F5844C 50%, #F5844C 100%);
+            background-image: linear-gradient(to right, #DC1668 0%, #DC1668 50.2%, #F5844C 50.2%, #F5844C 100%);
         }
         #iconRedes{
             position: absolute;
@@ -396,8 +397,8 @@ nav.main-menu li.active>a,
     <div class="linha">
         <img src="iconredes.png" id="iconRedes">
         <img src="logo_retina.png" id="logo">
-        <h1 id="nomeSistema">F E N I X</h1>
-        <h2 id="titulo">Pesquisa de Arquivos</h2>
+        <h1 id="nomeSistema">F Ê N I X</h1>
+        <h2 id="titulo">Dashboard</h2>
     <body>
         
             
@@ -430,70 +431,77 @@ nav.main-menu li.active>a,
 
                 <tr>
                     <th>Status</th>
+                    <th>Download</th>
                     <th>Ação</th>
                     <th>Remetente</th>
                     <th>Destinatario</th>
                     <th>Tipo de Arquivo</th>
                     <th>Data de Envio</th>
                     <th>Data de Retiradas</th>
+                    <th>Motivo do Erro</th>
+                    <th>Resubimit de Arquivo</th>
                     <th>Nomenclatura de arquivo</th>
                     <th>Nome de Processo</th>
-                    <th>Tempo de Processo</th>
+                    <th>Logs</th>
+                    <th>Tempo de Processamento</th>
                     <th>Destino</th>
-                    <th></th>
+                   
                 </tr>
                 <tr>
                     <td class="status"></td>
-                    <td>INST ORT FISIOTERAP SP LT</td>
-                    <td>SANTEXTRATO31</td>
-                    <td>2021-04-26 13:49:39</td>
-                    <td>202104267523903</td>
-                    <td>1.65 KB</td>
-                    <td>1.65 KB</td>
-                    <td><button>Log</button>⠀<button>Download</button></td>
+                    <td><button>Download</button></td>
+                    <td>Recebimento</td>
+                    <td>UNIBANK - 6628377</td>
+                    <td>PORTO XPTO - 1712246</td>
+                    <td>Pagamento</td>
+                    <td>28/04/2021  15:02:36</td>
+                    <td>28/04/2021  15:03:29</td>
+                    <td>-</td>
+                    <td><button>Resubmeter</button></td>
+                    <td>/itfs/fin/bancos/pagto/in/4028006940.341</td>
+                    <td>ApusPackedMessageDispatcher</td>
+                    <td><button>Link</button>⠀</td>
+                    <td>0 segundos</td>
+                    <td>/data/files/fileDelivery/6628377@1712246@ITAPAGREM17@202104288257044-202104288257047@202104281502</td>
 
                 </tr>
                 <tr>
                     <td class="status"></td>
-                    <td>CAIXA ECONOMICA FEDERAL</td>
-                    <td>CEFBOWREM</td>
-                    <td>2021-04-26 13:49:39</td>
-                    <td>202104267523756</td>
-                    <td>1.65 KB</td>
-                    <td>1.65 KB</td>
-                    <td><button>Log</button>⠀<button>Download</button></td>
-                </tr>
-                <tr>
-                    <td class="status"></td>
-                    <td>INST ORT FISIOTERAP SP LT</td>
-                    <td>SANTEXTRATO31</td>
-                    <td>2021-04-26 13:49:39</td>
-                    <td>202104267523903</td>
-                    <td>1.65 KB</td>
-                    <td>1.65 KB</td>
-                    <td><button>Log</button>⠀<button>Download</button></td>
-                </tr>
-                <tr>
-                    <td class="status"></td>
-                    <td>INST ORT FISIOTERAP SP LT</td>
-                    <td>SANTEXTRATO31</td>
-                    <td>2021-04-26 13:49:39</td>
-                    <td>202104267523903</td>
-                    <td>1.65 KB</td>
-                    <td>1.65 KB</td>
-                    <td><button>Log</button>⠀<button>Download</button></td>
-                </tr>
-                <tr>
-                    <td class="status"></td>
-                    <td>INST ORT FISIOTERAP SP LT</td>
-                    <td>SANTEXTRATO31</td>
-                    <td>2021-04-26 13:49:39</td>
-                    <td>202104267523903</td>
-                    <td>1.65 KB</td>
-                    <td>1.65 KB</td>
-                    <td><button>Log</button>⠀<button>Download</button></td>
-                </tr>
+                    <td><button>Download</button></td>
+                    <td>Envio</td>
+                    <td>PORTO XPTO - 1712246</td>
+                    <td>UNIBANK - 6628377</td>
+                    <td>Pagamento</td>
+                    <td>28/04/2021  07:58:39</td>
+                    <td>-</td>
+                    <td>Erro de NSA (NSA esperado: ....)</td>
+                    <td><button>Resubmeter</button></td>
+                    <td>/data/splitter/splitterPagamento/appdir/outgoing/20210428827710464282_seg.tmp</td>
+                    <td>UnpackedMessageDispatcher</td>
+                    <td><button>Link</button>⠀</td>
+                    <td>5 segundos</td>
+                    <td> /data/apusweb2/mbx/1712246/receive/6628377@1712246@ITAPAGRET17@202104288277221@20210428_17_07_11_190@wliServer1.zip</td>
 
+                </tr>
+                <tr>
+                    <td class="status"></td>
+                    <td><button>Download</button></td>
+                    <td>Em processamento</td>
+                    <td>PORTO XPTO - 1585143</td>
+                    <td>UNIBANK - 6628377</td>
+                    <td>Cobrança</td>
+                    <td>28/04/2021  10:03:43</td>
+                    <td>28/04/2021  10:04:37</td>
+                    <td>-</td>
+                    <td><button>Resubmeter</button></td>
+                    <td>/home/accesstage/financeiro/cobranca/carne/remessa/34106829.001</td>
+                    <td>ApusPackedMessageDispatcher</td>
+                    <td><button>Link</button>⠀</td>
+                    <td>0 segundos</td>
+                    <td>/data/files/fileDelivery/6628377@1585143@ITACOBREM@202104288185836-202104288185848@202104281003</td>
+
+                </tr>
+                
             </table>
         </div>
     </body>
