@@ -2,7 +2,7 @@
 
 <head>
     <style>
-     /*Inicio menu*/  
+        /*Inicio menu*/
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
         @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
@@ -147,9 +147,10 @@
             font-weight: 300;
             src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
         }
-/*Fim Menu*/
 
- /*TABELA*/
+        /*Fim Menu*/
+
+        /*TABELA*/
         #customers {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
@@ -163,7 +164,7 @@
 
         }
 
-       
+
         #customers td,
         #customers th {
             border: 1px solid rgb(0, 0, 0);
@@ -247,7 +248,7 @@
         }
 
         .button2 {
-            background-color: #F5844C ;
+            background-color: #F5844C;
             /* Green */
             border: none;
             border-radius: 5px;
@@ -275,55 +276,60 @@
             left: 80px;
             right: 10px;
             height: 500px;
-            margin-top: 275px;
+            margin-top: 421px;
             background: #FFFFFF;
             box-shadow: 3px 3px 3px 3px #b3b2b2;
             overflow-x: scroll;
             overflow-y: hidden;
             white-space: nowrap;
         }
+
         .caixaPesquisa {
             position: absolute;
             left: 80px;
             right: 10px;
             height: 250px;
-            margin-top: 0px;
+            margin-top: 130px;
             background: #ffffff;
             box-shadow: 3px 3px 3px 3px #b3b2b2;
-            }
-            .linha {
+        }
+
+        .linha {
             position: absolute;
             left: 0px;
             right: 0px;
             height: 40px;
             margin-top: -9px;
             background: #3f2856;
-            }
-/*FIM-FUNDO*/
+        }
+
+        /*FIM-FUNDO*/
         #logo {
             position: absolute;
             margin-left: 15px;
             margin-top: 8px
-
         }
+
         #nomeSistema {
             text-align: center;
             margin-top: 10px;
             font-size: 20px;
-            font-family:sans-serif;
+            font-family: sans-serif;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right, #DC1668 0%, #DC1668 50.2%, #F5844C 50.2%, #F5844C 100%);
         }
-        #iconRedes{
+
+        #iconRedes {
             position: absolute;
             margin-left: 1732px;
             margin-top: 4px;
             height: 30px;
             width: 144px;
         }
-        #titulo{
-            text-align:left;
+
+        #titulo {
+            text-align: left;
             margin-left: 100px;
             margin-top: 35px;
             font-size: 20px;
@@ -331,13 +337,54 @@
             color: #000000;
 
         }
-        #publi{
+
+        #publi {
             position: absolute;
             margin-left: 60px;
             margin-top: 480px;
             height: 30%;
             width: 30%;
         }
+
+        /*Tabela*/
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-collapse: collapse;
+            width: 93%;
+            position: absolute;
+            top: 30px;
+            margin-left: -10px;
+            margin-right: 0px;
+            left: 60px;
+            box-shadow: 2px 2px 2px 2px #888888;
+
+        }
+
+
+        #customers td,
+        #customers th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 2px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: rgb(155, 155, 155);
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #db7644;
+            color: white;
+        }
+
+        /*FIM tabela*/
     </style>
 </head>
 
@@ -398,16 +445,81 @@
         </ul>
     </nav>
 </body>
+
 <body>
     <div class="linha">
         <img src="iconredes.png" id="iconRedes">
         <img src="logo_retina.png" id="logo">
         <h1 id="nomeSistema">F Ê N I X</h1>
         <h2 id="titulo">Auditoria</h2>
-</div>
-<div>
-    <img src="publi.gif" id="publi">
-</div>
+    </div>
+
+    <div class="caixaPesquisa">
+        <form id="searchbox" method="get" action="/search">
+            <input name="q" type="text" size="15" placeholder="Remetente" />
+        </form>
+
+        <form id="searchbox" method="get" action="/search">
+            <input name="q" type="text" size="15" placeholder="Destinatario" />
+        </form>
+
+        <form id="searchbox" method="get" action="/search">
+            <input name="q" type="text" size="15" placeholder="Tipo arquivo" />
+        </form>
+
+        <form id="searchbox" method="get" action="/search">
+            <input name="q" type="text" size="15" placeholder="Data de envio         ___/___/___" />
+        </form>
+
+        <form id="searchbox" method="get" action="/search">
+            <input name="q" type="text" size="15" placeholder="Data de retirada          ___/___/___" />
+        </form>
+        <button class="button2">Pesquisar</button>
+        <button class="button2">limpar</button>
+    </div>
+
+    <div class="caixa">
+        <table id="customers">
+
+            <tr>
+                <th>Data</th>
+                <th>Tipo de Usuario</th>
+                <th>Usuário</th>
+                <th>Status</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+
+                <td>24/04/2021 08:00</td>
+                <td>Expert</td>
+                <td>Diego Sousa</td>
+                <td>Resubimit de Arquivo</td>
+                <td>Sender[1712246] Receiver[6629377]TrkId[2021104226362591] NewTrkId[202104226451255]</td>
+
+            </tr>
+            <tr>
+
+                <td>07/04/2021 10:00</td>
+                <td>Assistant </td>
+                <td>Gabriela Silva</td>
+                <td> Download do arquivo </td>
+                <td>/data/splitter/splitterPagamento/appdir/outgoing/20210407928378291_seg.tmp</td>
+            </tr>
+            <tr>
+
+                <td>30/04/2021 09:40</td>
+                <td>Master </td>
+                <td>Melissa Soares</td>
+                <td>Melissa Soares</td>
+                <td>Criação do usr: Lucas Oliveira</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!--<div>
+        <img src="publi.gif" id="publi">
+    </div>-->
 </body>
 
 </html>
