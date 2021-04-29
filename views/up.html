@@ -2,7 +2,7 @@
 
 <head>
     <style>
-     /*Inicio menu*/  
+        /*Inicio menu*/
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
         @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
@@ -147,9 +147,10 @@
             font-weight: 300;
             src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
         }
-/*Fim Menu*/
 
- /*TABELA*/
+        /*Fim Menu*/
+
+        /*TABELA*/
         #customers {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
@@ -163,7 +164,7 @@
 
         }
 
-       
+
         #customers td,
         #customers th {
             border: 1px solid rgb(0, 0, 0);
@@ -247,7 +248,7 @@
         }
 
         .button2 {
-            background-color: #F5844C ;
+            background-color: #F5844C;
             /* Green */
             border: none;
             border-radius: 5px;
@@ -282,6 +283,7 @@
             overflow-y: hidden;
             white-space: nowrap;
         }
+
         .caixaPesquisa {
             position: absolute;
             left: 80px;
@@ -290,85 +292,97 @@
             margin-top: 0px;
             background: #ffffff;
             box-shadow: 3px 3px 3px 3px #b3b2b2;
-            }
-            .linha {
+        }
+
+        .linha {
             position: absolute;
             left: 0px;
             right: 0px;
             height: 40px;
             margin-top: -9px;
             background: #3f2856;
-            }
-/*FIM-FUNDO*/
-/*enviar arquivos*/
+        }
 
+        /*FIM-FUNDO*/
+        /*enviar arquivos*/
 
-input[type=file] {
-display: none;
-}
-label {
-padding: 132px 198.4px;
-color: #FFF;
-text-transform: uppercase;
-display: block;
-margin-top: 120px;
-left: 35px;
-cursor: pointer;
-position: absolute;
-top: -85px;
-}
-input[type=submit] {
-font-size: 30px;
-font-family: "Fantasy";
-border: none;
-color: white;
-cursor: pointer;
-position: absolute;
-width: 397px;
-height: 98px;
-bottom: 30px;
-left: 35px;
-background: #DC1668;
-}
-.retangulo {
-position: absolute;
-left: 580px;
-width: 450px;
-height: 400px;
-background: #EFE8E8;
-margin: auto;
-padding: 10px;
-}
-.img {
-position: absolute;
-top: 15px;
-left: 10px;
-}
-/*FIM-enviar arquivos*/
+        input[type=file] {
+            display: none;
+        }
+
+        label {
+            padding: 132px 198.4px;
+            color: #FFF;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 120px;
+            left: 35px;
+            cursor: pointer;
+            position: absolute;
+            top: -85px;
+        }
+
+        input[type=submit] {
+            font-size: 30px;
+            font-family: "Fantasy";
+            border: none;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            width: 397px;
+            height: 98px;
+            bottom: 30px;
+            left: 35px;
+            background: #DC1668;
+            box-shadow: 2px 2px 2px 2px #888888;
+        }
+
+        .retangulo {
+            position: absolute;
+            left: 737px;
+            width: 450px;
+            height: 400px;
+            background: #EFE8E8;
+            margin: auto;
+            top: 143px;
+            padding: 10px;
+            box-shadow: 10px 10px 10px 10px #888888;
+
+        }
+
+        .img {
+            position: absolute;
+            top: -7px;
+            left: 75px;
+        }
+
+        /*FIM-enviar arquivos*/
         #logo {
             position: absolute;
             margin-left: 15px;
             margin-top: 8px
-
         }
+
         #nomeSistema {
             text-align: center;
             margin-top: 10px;
             font-size: 20px;
-            font-family:sans-serif;
+            font-family: sans-serif;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right, #DC1668 0%, #DC1668 50%, #F5844C 50%, #F5844C 100%);
         }
-        #iconRedes{
+
+        #iconRedes {
             position: absolute;
-            margin-left: 1180px;
+            margin-left: 1732px;
             margin-top: 4px;
             height: 30px;
             width: 144px;
         }
-        #titulo{
-            text-align:left;
+
+        #titulo {
+            text-align: left;
             margin-left: 100px;
             margin-top: 35px;
             font-size: 20px;
@@ -423,33 +437,35 @@ left: 10px;
                     </span>
                 </a>
             </li>
-
-        <ul class="logout">
-            <li>
-                <a href="#">
-                    <i class="fa fa-power-off fa-2x"></i>
-                    <span class="nav-text">
-                        Logout
-                    </span>
-                </a>
-            </li>
         </ul>
+            <ul class="logout">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        
     </nav>
 </body>
+
 <body>
     <div class="linha">
         <img src="iconredes.png" id="iconRedes">
         <img src="logo_retina.png" id="logo">
-        <h1 id="nomeSistema">F E N I X</h1>
+        <h1 id="nomeSistema">APUSTRACK</h1>
         <h2 id="titulo">Upload de Arquivos</h2>
-</div>
+    </div>
     <div class="retangulo">
-        <form action="http://localhost:8080/files/multiUpload" method="post">
-        <label for="myfile"><img class="img" src="upload.png"></label>
-        <input type="file" id="myfile" name="myfile" multiple><br>
-        <input type="submit" value="Enviar">
+        <form>
+            <label for="myfile"><img class="img" src="upload.png"></label>
+            <input type="file" id="myfile" name="myfile" multiple><br>
+            <input type="submit" value="Enviar">
         </form>
         <div>
 </body>
 
- </html>
+</html>
