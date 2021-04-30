@@ -304,7 +304,7 @@
         }
 
         /*FIM-FUNDO*/
-        /*enviar arquivos*/
+        /*enviar arquivos 01*/
 
         input[type=file] {
             display: none;
@@ -337,9 +337,115 @@
             box-shadow: 2px 2px 2px 2px #888888;
         }
 
-        .retangulo {
+        .retangulo1 {
             position: absolute;
-            left: 765px;
+            left: 177px;
+            width: 450px;
+            height: 400px;
+            background: #EFE8E8;
+            margin: auto;
+            top: 143px;
+            padding: 10px;
+            box-shadow: 10px 10px 10px 10px #888888;
+
+        }
+
+        .img {
+            position: absolute;
+            top: -7px;
+            left: 75px;
+        }
+
+        /*FIM-enviar arquivos*/
+        /*enviar arquivos 02*/
+
+        input[type=file] {
+            display: none;
+        }
+
+        label {
+            padding: 132px 198.4px;
+            color: #FFF;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 120px;
+            left: 35px;
+            cursor: pointer;
+            position: absolute;
+            top: -85px;
+        }
+
+        input[type=submit] {
+            font-size: 30px;
+            font-family: "Fantasy";
+            border: none;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            width: 397px;
+            height: 98px;
+            bottom: 30px;
+            left: 35px;
+            background: #DC1668;
+            box-shadow: 2px 2px 2px 2px #888888;
+        }
+
+        .retangulo2 {
+            position: absolute;
+            left: 745px;
+            width: 450px;
+            height: 400px;
+            background: #EFE8E8;
+            margin: auto;
+            top: 143px;
+            padding: 10px;
+            box-shadow: 10px 10px 10px 10px #888888;
+
+        }
+
+        .img {
+            position: absolute;
+            top: -7px;
+            left: 75px;
+        }
+
+        /*FIM-enviar arquivos*/
+        /*enviar arquivos 03*/
+
+        input[type=file] {
+            display: none;
+        }
+
+        label {
+            padding: 132px 198.4px;
+            color: #FFF;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 120px;
+            left: 35px;
+            cursor: pointer;
+            position: absolute;
+            top: -85px;
+        }
+
+        input[type=submit] {
+            font-size: 30px;
+            font-family: "Fantasy";
+            border: none;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            width: 397px;
+            height: 98px;
+            bottom: 30px;
+            left: 35px;
+            background: #DC1668;
+            box-shadow: 2px 2px 2px 2px #888888;
+        }
+
+        .retangulo3 {
+            position: absolute;
+            left: 1303px;
             width: 450px;
             height: 400px;
             background: #EFE8E8;
@@ -391,12 +497,12 @@
 
         }
 
-        #publi {
+        #PUB03 {
             position: absolute;
-            left: 714px;
-            top: 624px;
-            height: 30%;
-            width: 30%;
+            height: 18%;
+            left: 42%;
+            top: 78%;
+            width: 18%;
         }
 
         .caixaAtras {
@@ -407,6 +513,19 @@
             margin-top: 89px;
             background: #FFFFFF;
             box-shadow: 3px 3px 3px 3px #b3b2b2;
+        }
+
+        #CESS-SEM-CAPACETE {
+            position: absolute;
+            left: 87%;
+            top: 79%;
+        }
+
+        .miuda {
+            position: absolute;
+            top: 962px;
+            left: 5%;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -476,20 +595,34 @@
         <img src="iconredes.png" id="iconRedes">
         <img src="logo_retina.png" id="logo">
         <h1 id="nomeSistema">F Ê N I X</h1>
-        <h2 id="titulo">Upload de Arquivos</h2>
+        <h2 id="titulo">Gerenciamento de Arquivos</h2>
     </div>
-    <div class="retangulo">
+    <div class="retangulo1">
         <form>
             <label for="myfile"><img class="img" src="upload.png"></label>
             <input type="file" id="myfile" name="myfile" multiple><br>
             <input type="submit" value="Enviar">
         </form>
     </div>
-    <div>
-        <div>
-            <img src="publi.gif" id="publi">
-        </div>
+    <div class="retangulo2">
+        <form>
+            <label for="myfile"><img class="img" src="upload.png"></label>
+            <input type="file" id="myfile" name="myfile" multiple><br>
+            <input type="submit" value="Receber">
+        </form>
     </div>
+    <div class="retangulo3">
+        <form>
+            <label for="myfile"><img class="img" src="upload.png"></label>
+            <input type="file" id="myfile" name="myfile" multiple><br>
+            <input type="submit" value="Sincronizar">
+        </form>
+    </div>
+    <img src="LINHA-01.gif" id="LINHA-01">
+    <img src="PUB03.gif" id="PUB03">
+    <img src="CESS-SEM-CAPACETE.png" id="CESS-SEM-CAPACETE">
+    <p class="miuda"> Accesstage Conectividade Financeira | Av. Paulista, 2313 - 8º andar - Bela Vista, São Paulo, SP -
+        01311-934</p>
 </body>
 
 </html>

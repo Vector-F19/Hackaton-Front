@@ -275,7 +275,7 @@
             position: absolute;
             left: 80px;
             right: 10px;
-            height: 500px;
+            height: 586px;
             margin-top: 275px;
             background: #FFFFFF;
             box-shadow: 3px 3px 3px 3px #b3b2b2;
@@ -367,6 +367,113 @@
         }
 
         /*FIM IMG-STATUS-DASH*/
+
+        #CESS-SEM-CAPACETE {
+            position: absolute;
+            left: 87%;
+            top: 1972%;
+        }
+
+        .miuda {
+            position: absolute;
+            top: 962px;
+            left: 5%;
+            font-size: 14px;
+        }
+
+        /*POPUP*/
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+
+        }
+
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            height: 28%;
+
+        }
+
+        .h1 {
+            text-align: center;
+        }
+
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /*FIM-POPUP*/
+
+        /*TABELA POPUP*/
+        #customers1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-collapse: collapse;
+            width: 62%;
+            position: absolute;
+            top: 276px;
+            margin-left: -10px;
+            margin-right: 0px;
+            left: 270px;
+            box-shadow: 2px 2px 2px 2px #888888;
+
+        }
+
+
+        #customers1 td,
+        #customers1 th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 2px;
+        }
+
+        #customers1 tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers1 tr:hover {
+            background-color: rgb(155, 155, 155);
+        }
+
+        #customers1 th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #db7644;
+            color: white;
+        }
+
+        /*FIM TABELA POPUP*/
+
+        .download {
+            
+         
+        }
     </style>
 </head>
 
@@ -467,7 +574,6 @@
 
                     <tr>
                         <th>Status</th>
-                        <th>Download</th>
                         <th>Ação</th>
                         <th>Remetente</th>
                         <th>Destinatario</th>
@@ -475,34 +581,30 @@
                         <th>Data de Envio</th>
                         <th>Data de Retiradas</th>
                         <th>Motivo do Erro</th>
-                        <th>Resubimit de Arquivo</th>
-                        <th>Nomenclatura de arquivo</th>
-                        <th>Nome de Processo</th>
-                        <th>Logs</th>
                         <th>Tempo de Processamento</th>
-                        <th>Destino</th>
+                        <th>Download</th>
+                        <th>Resubimit de Arquivo</th>
+                        <th>Logs</th>
+
 
                     </tr>
-                    <tr>
+                    <tr id="myBtn">
                         <td class="status"><img class="Envio" src="Envio.png"></td>
-                        <td><button>Download</button></td>
                         <td>Recebimento</td>
                         <td>UNIBANK - 6628377</td>
                         <td>PORTO XPTO - 1712246</td>
                         <td>Pagamento</td>
-                        <td>28/04/2021 15:02:36</td>
-                        <td>28/04/2021 15:03:29</td>
+                        <td>30/04/2021 13:02:36</td>
+                        <td>30/04/2021 13:03:29</td>
                         <td>-</td>
-                        <td><button>Resubmeter</button></td>
-                        <td>/itfs/fin/bancos/pagto/in/4028006940.341</td>
-                        <td>ApusPackedMessageDispatcher</td>
-                        <td><button id="myBtn">Abir</button></td>
                         <td>0 segundos</td>
-                        <td>/data/files/fileDelivery/6628377@1712246@ITAPAGREM17@202104288257044-202104288257047@202104281502
+                        <td><button>Download</button></td>
+                        <td><button>Resubmeter</button></td>
+                        <td><button>Abir</button></td>
                         </td>
 
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td class="status"><img class="X" src="X.png"></td>
                         <td><button>Download</button></td>
                         <td>Envio</td>
@@ -512,7 +614,7 @@
                         <td>28/04/2021 07:58:39</td>
                         <td>-</td>
                         <td>Erro de NSA (NSA esperado: ....)</td>
-                        <td><button>Resubmeter</button></td>
+                        <td></td>
                         <td>/data/splitter/splitterPagamento/appdir/outgoing/20210428827710464282_seg.tmp</td>
                         <td>UnpackedMessageDispatcher</td>
                         <td><button id="myBtn">Abir</button></td>
@@ -531,18 +633,45 @@
                         <td>28/04/2021 10:03:43</td>
                         <td>28/04/2021 10:04:37</td>
                         <td>-</td>
-                        <td><button>Resubmeter</button></td>
+                        <td></td>
                         <td>/home/accesstage/financeiro/cobranca/carne/remessa/34106829.001</td>
                         <td>ApusPackedMessageDispatcher</td>
                         <td><button id="myBtn">Abir</button></td>
                         <td>0 segundos</td>
                         <td>/data/files/fileDelivery/6628377@1585143@ITACOBREM@202104288185836-202104288185848@202104281003
                         </td>
-
+-->
                     </tr>
 
                 </table>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <di class="h1">
+                            <h1>Detalhes</h1>
+                        </di>
+                        <table id="customers1">
+                            <tr>
+                                <th>Nomenclatura de arquivo</th>
+                                <th>Nome de Processo</th>
+                                <th>Destino</th>
+                            </tr>
+                            <tr>
+                                <td>/itfs/fin/bancos/pagto/in/4028006940.341</td>
+                                <td>ApusPackedMessageDispatcher</td>
+                                <td>/data/files/fileDelivery/6628377@1712246@ITAPAGREM17@202104288257044-202104288257047@202104281502
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
             </div>
+            <img src="CESS-SEM-CAPACETE.png" id="CESS-SEM-CAPACETE">
+            <p class="miuda"> Accesstage Conectividade Financeira | Av. Paulista, 2313 - 8º andar - Bela Vista, São
+                Paulo, SP -
+                01311-934</p>
         </body>
     </div>
 
