@@ -322,7 +322,7 @@
             top: -85px;
         }
 
-        input[type=submit] {
+        .rosa {
             font-size: 30px;
             font-family: "Fantasy";
             border: none;
@@ -350,7 +350,7 @@
 
         }
 
-        .img {
+        .imgUpload {
             position: absolute;
             top: -7px;
             left: 75px;
@@ -375,7 +375,7 @@
             top: -85px;
         }
 
-        input[type=submit] {
+        .laranja {
             font-size: 30px;
             font-family: "Fantasy";
             border: none;
@@ -386,7 +386,7 @@
             height: 98px;
             bottom: 30px;
             left: 35px;
-            background: #DC1668;
+            background: #F5844C;
             box-shadow: 2px 2px 2px 2px #888888;
         }
 
@@ -403,10 +403,11 @@
 
         }
 
-        .img {
+        .imgDownload {
             position: absolute;
-            top: -7px;
-            left: 75px;
+            top: 28px;
+            left: 53px;
+            width: 75%;
         }
 
         /*FIM-enviar arquivos*/
@@ -428,21 +429,6 @@
             top: -85px;
         }
 
-        input[type=submit] {
-            font-size: 30px;
-            font-family: "Fantasy";
-            border: none;
-            color: white;
-            cursor: pointer;
-            position: absolute;
-            width: 397px;
-            height: 98px;
-            bottom: 30px;
-            left: 35px;
-            background: #DC1668;
-            box-shadow: 2px 2px 2px 2px #888888;
-        }
-
         .retangulo3 {
             position: absolute;
             left: 1303px;
@@ -456,10 +442,10 @@
 
         }
 
-        .img {
+        .imgSincronizar {
             position: absolute;
-            top: -7px;
-            left: 75px;
+            top: 25px;
+            left: 108px;
         }
 
         /*FIM-enviar arquivos*/
@@ -527,6 +513,13 @@
             left: 5%;
             font-size: 14px;
         }
+
+        #LINHA-06 {
+            position: absolute;
+            left: 4%;
+            top: 45%;
+            width: 324px;
+        }
     </style>
 </head>
 
@@ -562,7 +555,7 @@
                 <a href="#auditoria">
                     <i class="fa fa-info fa-2x"></i>
                     <span class="nav-text">
-                        Auditoria
+                        Controle de Acessos
                     </span>
                 </a>
             </li>
@@ -599,27 +592,28 @@
     </div>
     <div class="retangulo1">
         <form>
-            <label for="myfile"><img class="img" src="upload.png"></label>
+            <label for="myfile"><img class="imgUpload" src="upload.png"></label>
             <input type="file" id="myfile" name="myfile" multiple><br>
-            <input type="submit" value="Enviar">
+            <input class="rosa" type="submit" value="Enviar">
         </form>
     </div>
     <div class="retangulo2">
         <form>
-            <label for="myfile"><img class="img" src="upload.png"></label>
+            <label for="myfile"><img class="imgDownload" src="DownloadRosa.png"></label>
             <input type="file" id="myfile" name="myfile" multiple><br>
-            <input type="submit" value="Receber">
+            <input class="laranja" type="submit" value="Receber">
         </form>
     </div>
     <div class="retangulo3">
         <form>
-            <label for="myfile"><img class="img" src="upload.png"></label>
+            <label for="myfile"><img class="imgSincronizar" src="Sincronizar.png"></label>
             <input type="file" id="myfile" name="myfile" multiple><br>
-            <input type="submit" value="Sincronizar">
+            <input class="rosa" type="submit" value="Sincronizar">
         </form>
     </div>
     <img src="LINHA-01.gif" id="LINHA-01">
     <img src="PUB03.gif" id="PUB03">
+    <img src="LINHA-06.png" id="LINHA-06">
     <img src="CESS-SEM-CAPACETE.png" id="CESS-SEM-CAPACETE">
     <p class="miuda"> Accesstage Conectividade Financeira | Av. Paulista, 2313 - 8º andar - Bela Vista, São Paulo, SP -
         01311-934</p>

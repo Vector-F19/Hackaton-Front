@@ -346,6 +346,13 @@
             margin-top: 10px;
         }
 
+        .Envio2 {
+
+            width: 35px;
+            margin-top: 10px;
+        }
+
+
         .X {
 
             width: 35px;
@@ -468,11 +475,32 @@
             color: white;
         }
 
+
         /*FIM TABELA POPUP*/
 
-        .download {
-            
-         
+        #LINHA-05 {
+            position: absolute;
+            left: 1587px;
+            top: 266%;
+            width: 324px;
+        }
+
+        .botaoDownload {
+            background-image: url(Download.png);
+            background-size: cover;
+            width: 52px;
+            height: 38px;
+            font-size: 2rem;
+            border: none;
+        }
+
+        .LOG {
+            background-image: url(LOG.png);
+            background-size: cover;
+            width: 34px;
+            height: 34px;
+            font-size: 2rem;
+            border: none;
         }
     </style>
 </head>
@@ -509,7 +537,7 @@
                 <a href="#auditoria">
                     <i class="fa fa-info fa-2x"></i>
                     <span class="nav-text">
-                        Auditoria
+                        Controle de Acessos
                     </span>
                 </a>
             </li>
@@ -569,7 +597,9 @@
                 <button class="button2">limpar</button>
                 <img src="Status.png" id="Status">
             </div>
+
             <div class="caixa">
+
                 <table id="customers">
 
                     <tr>
@@ -588,59 +618,100 @@
 
 
                     </tr>
-                    <tr id="myBtn">
-                        <td class="status"><img class="Envio" src="Envio.png"></td>
-                        <td>Recebimento</td>
-                        <td>UNIBANK - 6628377</td>
-                        <td>PORTO XPTO - 1712246</td>
-                        <td>Pagamento</td>
-                        <td>30/04/2021 13:02:36</td>
-                        <td>30/04/2021 13:03:29</td>
-                        <td>-</td>
-                        <td>0 segundos</td>
-                        <td><button>Download</button></td>
-                        <td><button>Resubmeter</button></td>
-                        <td><button>Abir</button></td>
-                        </td>
 
-                    </tr>
-                    <!-- <tr>
+                    <tr id="myBtn">
                         <td class="status"><img class="X" src="X.png"></td>
-                        <td><button>Download</button></td>
+
                         <td>Envio</td>
                         <td>PORTO XPTO - 1712246</td>
                         <td>UNIBANK - 6628377</td>
                         <td>Pagamento</td>
-                        <td>28/04/2021 07:58:39</td>
+                        <td>30/04/2021 07:58:39</td>
                         <td>-</td>
                         <td>Erro de NSA (NSA esperado: ....)</td>
-                        <td></td>
-                        <td>/data/splitter/splitterPagamento/appdir/outgoing/20210428827710464282_seg.tmp</td>
-                        <td>UnpackedMessageDispatcher</td>
-                        <td><button id="myBtn">Abir</button></td>
                         <td>5 segundos</td>
-                        <td> /data/apusweb2/mbx/1712246/receive/6628377@1712246@ITAPAGRET17@202104288277221@20210428_17_07_11_190@wliServer1.zip
+                        <td>⠀<form action="http://localhost:8080/files/download/TESTE.txt" method="GET">
+                                <button class="botaoDownload"></button>
+                            </form>
+                        </td>
+                        <td></td>
+                        <td>⠀<form action="http://localhost:8080/files/download/LOG.txt" method="GET">
+                                <button class="LOG"></button>
+                            </form>
                         </td>
 
+
+
+
                     </tr>
-                    <tr>
+                    <tr id="myBtn">
                         <td class="status"><img class="processamento" src="Processando.png"></td>
-                        <td><button>Download</button></td>
+
                         <td>Em processamento</td>
                         <td>PORTO XPTO - 1585143</td>
                         <td>UNIBANK - 6628377</td>
                         <td>Cobrança</td>
-                        <td>28/04/2021 10:03:43</td>
-                        <td>28/04/2021 10:04:37</td>
+                        <td>30/04/2021 10:03:43</td>
+                        <td>30/04/2021 10:04:37</td>
                         <td>-</td>
-                        <td></td>
-                        <td>/home/accesstage/financeiro/cobranca/carne/remessa/34106829.001</td>
-                        <td>ApusPackedMessageDispatcher</td>
-                        <td><button id="myBtn">Abir</button></td>
                         <td>0 segundos</td>
-                        <td>/data/files/fileDelivery/6628377@1585143@ITACOBREM@202104288185836-202104288185848@202104281003
+                        <td>⠀<form action="http://localhost:8080/files/download/TESTE.txt" method="GET">
+                                <button class="botaoDownload"></button>
+                            </form>
                         </td>
--->
+                        <td></td>
+                        <td>⠀<form action="http://localhost:8080/files/download/LOG.txt" method="GET">
+                                <button class="LOG"></button>
+                            </form>
+                        </td>
+
+                    </tr>
+
+
+                    <tr id="myBtn">
+                        <td class="status"><img class="Envio" src="Envio.png"></td>
+
+                        <td>Envio</td>
+                        <td>PORTO XPTO - 1712246</td>
+                        <td>UNIBANK - 6628377</td>
+                        <td>Pagamento</td>
+                        <td>30/04/2021 11:35:39</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>5 segundos</td>
+                        <td>⠀<form action="http://localhost:8080/files/download/TESTE.txt" method="GET">
+                                <button class="botaoDownload"></button>
+                            </form>
+                        </td>
+                        <td><button>Resubmeter</button></td>
+                        <td>⠀<form action="http://localhost:8080/files/download/LOG.txt" method="GET">
+                                <button class="LOG"></button>
+                            </form>
+                        </td>
+
+                    </tr>
+                    <tr id="myBtn">
+                        <td class="status"><img class="Envio2" src="Envio2.png"></td>
+                        <td>Finalizado</td>
+                        <td>PORTO XPTO - 1712246</td>
+                        <td>UNIBANK - 6628377</td>
+                        <td>Pagamento</td>
+                        <td>30/04/2021 07:02:36</td>
+                        <td>30/04/2021 13:03:29</td>
+                        <td>-</td>
+                        <td>2 segundos</td>
+                        <td>⠀<form action="http://localhost:8080/files/download/TESTE.txt" method="GET">
+                                <button class="botaoDownload"></button>
+                            </form>
+                        </td>
+
+                        <td></td>
+                        
+                        <td>⠀<form action="http://localhost:8080/files/download/LOG.txt" method="GET">
+                                <button class="LOG"></button>
+                            </form>
+                        </td>
+
                     </tr>
 
                 </table>
@@ -667,11 +738,59 @@
                     </div>
                 </div>
 
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <di class="h1">
+                            <h1>Detalhes</h1>
+                        </di>
+                        <table id="customers1">
+                            <tr>
+                                <th>Nomenclatura de arquivo</th>
+                                <th>Nome de Processo</th>
+                                <th>Destino</th>
+                            </tr>
+                            <tr>
+                                <td>/data/splitter/splitterPagamento/appdir/outgoing/20210428827710464282_seg.tmp</td>
+                                <td>UnpackedMessageDispatcher</td>
+                                <td> /data/apusweb2/mbx/1712246/receive/6628377@1712246@ITAPAGRET17@202104288277221@20210428_17_07_11_190@wliServer1.zip
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <di class="h1">
+                            <h1>Detalhes</h1>
+                        </di>
+                        <table id="customers1">
+                            <tr>
+                                <th>Nomenclatura de arquivo</th>
+                                <th>Nome de Processo</th>
+                                <th>Destino</th>
+                            </tr>
+                            <tr>
+                                <td>/home/accesstage/financeiro/cobranca/carne/remessa/34106829.001</td>
+                                <td>ApusPackedMessageDispatcher</td>
+                                <td>/data/files/fileDelivery/6628377@1585143@ITACOBREM@202104288185836-202104288185848@202104281003
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                </div>
+
             </div>
+
             <img src="CESS-SEM-CAPACETE.png" id="CESS-SEM-CAPACETE">
             <p class="miuda"> Accesstage Conectividade Financeira | Av. Paulista, 2313 - 8º andar - Bela Vista, São
                 Paulo, SP -
                 01311-934</p>
+
         </body>
     </div>
 
